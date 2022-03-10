@@ -1,0 +1,16 @@
+MetaFileClass {
+ Name "{AAF48CC67B9D4FD8}Script Dev/Mod Development/DayZ-AutoSort-Mod/AutoSorting/gui/images/logoOpaque.edds"
+ Author "desktop-qs5p323"
+ ChangeDate 278195306
+ Configurations {
+  PNGResourceClass PC {
+   SourceFile "logoOpaque.png"
+  }
+  PNGResourceClass XBOX_ONE : PC {
+  }
+  PNGResourceClass PS4 : PC {
+  }
+  PNGResourceClass LINUX : PC {
+  }
+ }
+}

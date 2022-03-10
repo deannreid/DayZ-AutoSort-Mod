@@ -1,0 +1,16 @@
+MetaFileClass {
+ Name "{29BB5CDE20A58ABA}Script Dev/Mod Development/DayZ-AutoSort-Mod/AutoSorting/gui/images/logoTransparent.edds"
+ Author "desktop-qs5p323"
+ ChangeDate -1001100182
+ Configurations {
+  PNGResourceClass PC {
+   SourceFile "logoTransparent.png"
+  }
+  PNGResourceClass XBOX_ONE : PC {
+  }
+  PNGResourceClass PS4 : PC {
+  }
+  PNGResourceClass LINUX : PC {
+  }
+ }
+}

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<modded_inputs>
+    <inputs>
+        <actions>
+            <input name="ASSortingUI" loc="Open Sorting UI" />
+            <input name="ASAutoSort" loc="Auto Quick Sort (Coming Soon)-" />
+        </actions>
+    </inputs>
+    <preset>
+        <input name="ASSortingUI">
+            <btn name="kN" />
+        </input>
+        <input name="ASAutoSort">
+            <btn name="kINSERT" />
+        </input>
+    </preset>
+</modded_inputs>

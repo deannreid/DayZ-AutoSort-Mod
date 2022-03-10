@@ -1,0 +1,183 @@
+FrameWidgetClass ASUI {
+ position 13.2515 13.2515
+ size 993.86499 1037.76001
+ hexactpos 1
+ vexactpos 1
+ hexactsize 1
+ vexactsize 1
+ {
+  TextWidgetClass lblHeader {
+   ignorepointer 1
+   position 234.74899 66.7485
+   size 530.75299 113.73299
+   hexactpos 1
+   vexactpos 1
+   hexactsize 1
+   vexactsize 1
+   style Normal
+   text "Auto Sort"
+   font "gui/fonts/sdf_metronlight72"
+   "text halign" center
+   "text valign" center
+  }
+  ImageWidgetClass imgBackground {
+   ignorepointer 1
+   position 472.93201 12.4855
+   size 48 48
+   hexactpos 1
+   vexactpos 1
+   hexactsize 1
+   vexactsize 1
+  }
+  ButtonWidgetClass btnSortAll {
+   disabled 1
+   position 238.52701 212.02501
+   size 530.75299 106.012
+   hexactpos 1
+   vexactpos 1
+   hexactsize 1
+   vexactsize 1
+   text "Sort All"
+   font "gui/fonts/metronblack48"
+  }
+  ButtonWidgetClass btnWeapons {
+   position 13.2513 344.54001
+   size 463.80399 92.7606
+   hexactpos 1
+   vexactpos 1
+   hexactsize 1
+   vexactsize 1
+   text "Weapons"
+   font "gui/fonts/metronblack48"
+  }
+  ButtonWidgetClass btnAmmo {
+   position 516.81 344.54001
+   size 462.047 92.7606
+   hexactpos 1
+   vexactpos 1
+   hexactsize 1
+   vexactsize 1
+   text "Ammo"
+   font "gui/fonts/metronblack48"
+  }
+  ButtonWidgetClass btnMags {
+   position 13.2513 450.552
+   size 463.80399 92.7606
+   hexactpos 1
+   vexactpos 1
+   hexactsize 1
+   vexactsize 1
+   text "Magazines"
+   font "gui/fonts/metronblack48"
+  }
+  ButtonWidgetClass btnAttachments {
+   position 516.81 450.552
+   size 462.047 92.7606
+   hexactpos 1
+   vexactpos 1
+   hexactsize 1
+   vexactsize 1
+   text "Attachments"
+   font "gui/fonts/metronblack48"
+  }
+  ButtonWidgetClass btnConsumables {
+   position 10.7485 618.74896
+   size 463.80399 92.7606
+   hexactpos 1
+   vexactpos 1
+   hexactsize 1
+   vexactsize 1
+   text "Consumables"
+   font "gui/fonts/metronblack48"
+  }
+  ButtonWidgetClass btnAttire {
+   position 514.74896 618.74799
+   size 224 92.7606
+   hexactpos 1
+   vexactpos 1
+   hexactsize 1
+   vexactsize 1
+   text "Attire"
+   font "gui/fonts/metronblack48"
+  }
+  ButtonWidgetClass btnArmor {
+   position 762.74799 618.74799
+   size 213.93799 92.7606
+   hexactpos 1
+   vexactpos 1
+   hexactsize 1
+   vexactsize 1
+   text "Armor"
+   font "gui/fonts/metronblack48"
+  }
+  ButtonWidgetClass btnTools {
+   position 10.7485 722.74896
+   size 463.80399 92.7606
+   hexactpos 1
+   vexactpos 1
+   hexactsize 1
+   vexactsize 1
+   text "Tools"
+   font "gui/fonts/metronblack48"
+  }
+  ButtonWidgetClass btnElectrical {
+   position 514.74896 722.74799
+   size 462.047 92.7606
+   hexactpos 1
+   vexactpos 1
+   hexactsize 1
+   vexactsize 1
+   text "Electrical"
+   font "gui/fonts/metronblack48"
+  }
+  ButtonWidgetClass btnResources {
+   position 10.7485 826.74896
+   size 463.80399 92.7606
+   hexactpos 1
+   vexactpos 1
+   hexactsize 1
+   vexactsize 1
+   text "Resources"
+   font "gui/fonts/metronblack48"
+  }
+  ButtonWidgetClass btnSpare {
+   disabled 1
+   position 514.74896 826.74799
+   size 462.047 92.7606
+   hexactpos 1
+   vexactpos 1
+   hexactsize 1
+   vexactsize 1
+   text "Spare"
+   font "gui/fonts/metronblack48"
+  }
+  ButtonWidgetClass btnMisc {
+   position 278.28201 940.85895
+   size 462.047 92.7606
+   hexactpos 1
+   vexactpos 1
+   hexactsize 1
+   vexactsize 1
+   text "Misc"
+   font "gui/fonts/metronblack48"
+  }
+  ButtonWidgetClass btnReturn {
+   position 30.2358 36.4855
+   size 102.089 48
+   hexactpos 1
+   vexactpos 1
+   hexactsize 1
+   vexactsize 1
+   text "Exit"
+  }
+  ButtonWidgetClass btnHelp {
+   position 927.93207 36.4855
+   size 53.4477 48
+   hexactpos 1
+   vexactpos 1
+   hexactsize 1
+   vexactsize 1
+   text "?"
+  }
+ }
+}
