@@ -1,10 +1,10 @@
 MetaFileClass {
- Name "{AAF48CC67B9D4FD8}Script Dev/Mod Development/DayZ-AutoSort-Mod/AutoSorting/gui/images/logoOpaque.edds"
+ Name "{29BB5CDE20A58ABA}Script Dev/Mod Development/DayZ-AutoSort-Mod/AutoSorting/gui/images/logoTransparent.edds"
  Author "desktop-qs5p323"
- ChangeDate -1168872342
+ ChangeDate -1495995286
  Configurations {
   PNGResourceClass PC {
-   SourceFile "logoOpaque.png"
+   SourceFile "logoTransparent.png"
   }
   PNGResourceClass XBOX_ONE : PC {
   }

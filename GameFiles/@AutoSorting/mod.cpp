@@ -1,0 +1,11 @@
+name = "Auto Sorting";
+picture = "AutoSorting/gui/images/logoTransparent.edds"; 
+logo = "AutoSorting/gui/images/logoTransparent.edds";
+logoSmall = "AutoSorting/gui/icons/iconOpaque.edds";
+logoOver = "AutoSorting/gui/images/logoOpaque.edds";
+tooltip = "A cheeky Auto Sort Mod for DayZ";
+overview = "This is a mod to automatically sort your storage, We all know how much fun it is to manually move from your inventory to storage. so lets just save 5 hours of your time and easily let you sort your junk.";
+action = "https://github.com/deannreid/DayZ-AutoSort-Mod";
+author = "Dean Reid";
+authorID = "76561198001768308";
+version = "0.1.1003";

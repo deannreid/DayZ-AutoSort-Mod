@@ -1,11 +1,6 @@
-
 Addons - Shortcut.lnk
 clientStart.bat
 DayZ - Shortcut.lnk
 PBO Output/Addons/AutoSort_Development.pbo
-GameFiles/@AutoSorting/Addons/AutoSorting.pbo
-GameFiles/@AutoSorting/mod.cpp
 serverStart.bat
-PBO Output/Addons/AutoSort_Development.pbo
-build/mod.cpp
-PBO Output/Addons/AutoSort_Development.pbo
+build/*
