@@ -1,0 +1,10 @@
+name = "Auto Sorting";
+picture = "";
+logoSmall = "";
+logo = "";
+logoOver = "";
+tooltip = "A cheeky Auto Sort Mod for DayZ";
+overview = "Easily Let you sort your junk in crates";
+action = "https://github.com/deannreid/DayZ-AutoSort-Mod";
+author = "Dean Reid";
+version = "0.1";
