@@ -28,10 +28,12 @@ class ACSConfig {
 	int g_ACSCooldownTime; //Time between attempts to auto sort (Default 20 seconds)
 	
 	//Only 1 can be populated at a time if both are populated then neither will work.
-	ref array<string> g_ACSBlacklistTypes; //Blacklist certain types of items - might be useful for some servers.
-	ref array<string> g_ACSWhitelistTypes; //Blacklist all types except the listed items - might be useful for some servers.
-	ref array<string> g_ACSBlacklistStorageTypes; //Blacklist Storage types to certain objects - e.g mil crates only or custom crate 
-
+	ref array<string> g_ACSBlacklistItemTypes; 			//Blacklist certain types of items - might be useful for some servers.
+	ref array<string> g_ACSWhitelistItemTypes; 			//Blacklist all types except the listed items - might be useful for some servers.
+	ref array<string> g_ACSBlacklistObjectTypes; 		//Blacklist Storage types to certain objects - e.g mil crates only or custom crate 
+	
+	ref array<string> g_ACSAcceptedModList;				// Add Classnames to the accepted mod if the mod creator hasn't added it themselves.
+	ref array<string> g_ACSAcceptedItemType;				// Types of storage that is acceptable
 }
 
 class ACSGlobals 
@@ -77,11 +79,38 @@ class ACSGlobals
 		config.s_ACSEnableLogging = false;
 		config.g_ACSCooldownTime = 20;
 		//List Config Defaults
-		config.g_ACSBlacklistTypes = { "" };
-		config.g_ACSWhitelistTypes = { "" };
-		config.g_ACSBlacklistStorageTypes = { "container_protector_small", "container_ammobox300rnd", "SeaChest" };
-	
-			
+		config.g_ACSBlacklistItemTypes = { "" };
+		config.g_ACSWhitelistItemTypes = { "" };
+		
+		config.g_ACSBlacklistObjectTypes = { "" };
+		
+		//Acceptable Mods.
+		config.g_ACSAcceptedModList = { 
+			//MuchStuffPack
+			"Msp_LargeAmmoBox",
+			"Msp_GrenadeBox",
+			"Msp_TackleBox ",
+			"Msp_TackleBox_Black",
+			"Msp_CoolerBox", 
+			"Msp_CoolerBox_Black", 
+			"Msp_Basket_Rectangular", 
+			"Msp_Basket_Wicker",
+			"Msp_MedievalChest", 
+			"Msp_TreasureChest",
+			"Msp_AmericanAppleCrate", 
+			"Msp_AppleCrate", 
+			"Msp_PlasticCrate", 
+			"Msp_AmmoCrate", 
+			"Msp_MilitaryCrate_Brown",
+			"Msp_MilitaryCrate_Green",
+			"Msp_MilitaryCrate_Grey",
+			"Msp_MilitaryCrate_Olive",
+			"Msp_MilitaryCrate_Tan"
+		};	
+				
+		//Acceptable Item Types.
+		config.g_ACSAcceptedItemType = { "Food", "Ammo", "Weapons", "Generic", "Medical" };	
+		
 		if (!FileExist(configRoot)) 
 		{
 			Print("[ACS] '" + configRoot + "' does not exist, creating...");
