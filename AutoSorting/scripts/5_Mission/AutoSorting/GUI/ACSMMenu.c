@@ -17,6 +17,7 @@
 
 class ACSMMenu extends UIScriptedMenu
 {
+	PlayerBase player = PlayerBase.Cast(GetGame().GetPlayer());
 	protected Widget w_Root;
 	
     ImageWidget		img_background;
@@ -41,10 +42,9 @@ class ACSMMenu extends UIScriptedMenu
 	
 	override Widget Init()
     {
-		Print("[ACS - ACSMainMenu] ACSMMenu - Init");
-		layoutRoot		= GetGame().GetWorkspace().CreateWidgets( "AutoSort/gui/layouts/ACSMmenu_main.layout" );
+		Print("[ACS UIManager] :: UI  Init");
+		layoutRoot		= GetGame().GetWorkspace().CreateWidgets( "AutoSort/gui/layouts/ACSM_InGameMain.layout" );
 		//w_Root.Show( false );
-
 		btnSortAll		= ButtonWidget.Cast( layoutRoot.FindAnyWidget( "btnSortAll" ) );
 		btnWeapons		= ButtonWidget.Cast( layoutRoot.FindAnyWidget( "btnWeapons" ) );
 		btnAmmo			= ButtonWidget.Cast( layoutRoot.FindAnyWidget( "btnAmmo" ) );
@@ -61,7 +61,7 @@ class ACSMMenu extends UIScriptedMenu
 		btn_back 		= ButtonWidget.Cast( layoutRoot.FindAnyWidget( "btn_back" ) );
 		btnHelpMePls    = ButtonWidget.Cast( layoutRoot.FindAnyWidget( "btnHelpMePls" ) );
 		img_background 	= ImageWidget.Cast( layoutRoot.FindAnyWidget( "imgBackground" ) );
-		//img_background.LoadImageFile( 0, "set:ACS_SortMenu image:BuildWheel" );
+		img_background.LoadImageFile( 0, "set:main_UI image:main_BG" );
 
         return layoutRoot;
 	}
@@ -73,76 +73,81 @@ class ACSMMenu extends UIScriptedMenu
 	
     override void OnShow()
     {
-		g_Game.GetUIManager().ShowUICursor(true);
-        g_Game.GetUIManager().ShowCursor(true);
-        GetGame().GetMission().PlayerControlDisable(INPUT_EXCLUDE_ALL);
-        GetGame().GetInput().ChangeGameFocus( 1 );
-        GetGame().GetMission().GetHud().Show( false );
+		Print("[ACS - ACSMainMenu - Debug] ACSMMenu - Show");
+		    GetGame().GetUIManager().ShowUICursor(true);
+    		GetGame().GetUIManager().ShowCursor(true);
+    		GetGame().GetInput().ChangeGameFocus(1);
+          //GetGame().GetMission().PlayerControlDisable(INPUT_EXCLUDE_ALL);
+          //GetGame().GetMission().GetHud().Show( false );
     }
 
     override void OnHide()
     {
-        g_Game.GetUIManager().ShowCursor(false);
-        g_Game.GetUIManager().ShowUICursor(false);
-        GetGame().GetInput().ResetGameFocus();
-        GetGame().GetMission().PlayerControlEnable(false);
-        GetGame().GetUIManager().Back();
-        GetGame().GetMission().GetHud().Show( true );
+		Print("[ACS - ACSMainMenu - Debug] ACSMMenu - Hide");
+		    GetGame().GetUIManager().ShowCursor(false);
+    		GetGame().GetUIManager().ShowUICursor(false);
+    		GetGame().GetInput().ResetGameFocus();
+          //GetGame().GetUIManager().Back();
+          //GetGame().GetMission().GetHud().Show( true );
     }	
+	
 	override bool OnClick(Widget w, int x, int y, int button)
     {
 		super.OnClick(w, x, y, button);
 		
-		if (button == MouseState.LEFT)
-        {
+		if (button == MouseState.LEFT) {
 			if(w == btnSortAll) {	
 				
 			} else if (w == btnWeapons) {
-				
+				Print( "Weapons Sorted");
 				return true;
 			} else if (w == btnAmmo) {
-				
+				Print( "Ammo Sorted");
 				return true;
 			} else if (w == btnMags) {
-				
+				Print( "Magazines Sorted");
 				return true;
 			} else if (w == btnAttachments) {
-				
+				Print( "Attachments Sorted");
 				return true;
 			} else if (w == btnConsumables) {
-				
+				Print( "Consumables Sorted");
 				return true;
 			} else if (w == btnAttire) {
-				
+				Print( "Attire Sorted");
 				return true;
 			} else if (w == btnArmor) {
-				
+				Print( "Armor Sorted");
 				return true;
 			} else if (w == btnTools) {
-				
+				Print( "Tools Sorted");
 				return true;
 			} else if (w == btnElectrical) {
-				
+				Print( "Electrical Sorted");
 				return true;
 			} else if (w == btnResources) {
-				
+				Print( "Resources Sorted");
 				return true;
 			} else if (w == btnSpare) {
-				
+				Print( "Spare Sorted");
 				return true;
 			} else if (w == btnMisc) { 
-			
+				Print( "Misc Items Sorted");
 				return true;
 			} else if (w == btnHelpMePls) {
+				Print( "Help Pls");
 				GetGame().OpenURL( "https://www.youtube.com/watch?v=o-YBDTqX_ZU" );
 				return true;
 				
 			} else if (w == btn_back) {
+				Print( "Exit Menu");
 				GetGame().GetUIManager().HideScriptedMenu(this);
 				delete this;
 				return true;
 			}
 		}
+		GetGame().GetUIManager().HideScriptedMenu(this);
+		delete this;
 		return false;
 	}
 }

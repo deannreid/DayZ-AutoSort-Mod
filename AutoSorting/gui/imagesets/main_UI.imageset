@@ -1,0 +1,20 @@
+ImageSetClass {
+ Name "main_UI"
+ RefSize 1080 2160
+ Textures {
+  ImageSetTextureClass {
+   mpix 1
+   path "{157ED11E9FCCF1FA}Script Dev/Mod Development/DayZ-AutoSort-Mod/AutoSorting/gui/imagesets/main_UI.edds"
+  }
+ }
+ Images {
+  ImageSetDefClass main_BG {
+   Name "main_BG"
+   Pos 0 0
+   Size 740 860
+   Flags 0
+  }
+ }
+ Groups {
+ }
+}

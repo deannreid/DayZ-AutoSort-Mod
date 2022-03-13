@@ -19,34 +19,35 @@ modded class MissionGameplay {
 
 	// UI reference
 	ref ACSMMenu m_ACSMMenu;
+	PlayerBase player = PlayerBase.Cast(GetGame().GetPlayer());
+	ItemBase iteminhands;
 
 	
 	void MissionGameplay() {
+		Print("[ACSUIManager] :: Plugin Init!");
 		m_ACSMMenu = NULL;
 	}
 	
 	override void OnInit()
     {
         super.OnInit();
-        
-        Print("[ACS - MissionGameplay] OnInit - Client"); 
+	    Print("[ACSUIManager] :: OnInit - Client"); 
 	}
 	
 	override void OnMissionStart()
     {
         super.OnMissionStart();
-        Print("[ACS - MissionGameplay] OnMissionStart - Client");
+        Print("[ACSUIManager] :: OnMissionStart - Client");
     }
 
     override void OnMissionFinish()
     {
         super.OnMissionFinish();
-        Print("[ACS - MissionGameplay] OnMissionFinish - Client");
+        Print("[ACSUIManager] :: OnMissionFinish - Client");
     }
 	
 	override void OnUpdate(float timeslice)
 	{
-		Print("[ACS - MissionGameplay] OnUpdate - Client"); 
 		super.OnUpdate(timeslice);
 /*
 		PlayerBase player = PlayerBase.Cast(GetGame().GetPlayer());
@@ -64,8 +65,34 @@ modded class MissionGameplay {
 		}*/
 	
 		// Open UI
-		if (GetGame().GetInput().LocalPress("m_ACSMMenu", true)){
-			
+		if (GetGame().GetInput().LocalPress("ASSortingUI", true)){
+			Print("[ACSUIManager] :: Keybind Pressed !");
+			//clear_UI;
+			m_ACSMMenu = new ACSMMenu();
+			GetGame().GetUIManager().ShowScriptedMenu(m_ACSMMenu, NULL);
+		}
+	}
+	
+	void clear_UI() {
+		if(m_ACSMMenu)
+		{
+			Print("[ACSUIManager] :: Keybind Pressed !");
+			GetGame().GetUIManager().HideScriptedMenu(m_ACSMMenu);
+			delete m_ACSMMenu;
+		}
+	}
+	
+	override void OnKeyPress(int key)
+	{
+		super.OnKeyPress(key);
+
+		if (key == KeyCode.KC_ESCAPE)
+		{
+			if(m_ACSMMenu)
+			{
+				GetGame().GetUIManager().HideScriptedMenu(m_ACSMMenu);
+				delete m_ACSMMenu;
+			}
 		}
 	}
 }
