@@ -28,6 +28,10 @@ class CfgMods
 		};
 		class defs
 		{
+			class imageSets
+            {
+                files[] = {"AutoSorting/gui/imagesets/main_UI.imageset"};
+            };
 			class engineScriptModule
 			{
 				value="";

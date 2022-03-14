@@ -43,7 +43,7 @@ class ACSMMenu extends UIScriptedMenu
 	override Widget Init()
     {
 		Print("[ACS UIManager] :: UI  Init");
-		layoutRoot		= GetGame().GetWorkspace().CreateWidgets( "AutoSort/gui/layouts/ACSM_InGameMain.layout" );
+		layoutRoot		= GetGame().GetWorkspace().CreateWidgets( "AutoSorting/gui/layouts/ACSM_InGameMain.layout" );
 		//w_Root.Show( false );
 		btnSortAll		= ButtonWidget.Cast( layoutRoot.FindAnyWidget( "btnSortAll" ) );
 		btnWeapons		= ButtonWidget.Cast( layoutRoot.FindAnyWidget( "btnWeapons" ) );
@@ -60,8 +60,8 @@ class ACSMMenu extends UIScriptedMenu
 		btnMisc 		= ButtonWidget.Cast( layoutRoot.FindAnyWidget( "btnMisc" ) );
 		btn_back 		= ButtonWidget.Cast( layoutRoot.FindAnyWidget( "btn_back" ) );
 		btnHelpMePls    = ButtonWidget.Cast( layoutRoot.FindAnyWidget( "btnHelpMePls" ) );
-		img_background 	= ImageWidget.Cast( layoutRoot.FindAnyWidget( "imgBackground" ) );
-		img_background.LoadImageFile( 0, "set:main_UI image:main_BG" );
+		//img_background 	= ImageWidget.Cast( layoutRoot.FindAnyWidget( "imgBackground" ) );
+		//img_background.LoadImageFile( 1, "set:main_UI image:main_BG" );
 
         return layoutRoot;
 	}

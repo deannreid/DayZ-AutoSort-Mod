@@ -11,7 +11,7 @@ ImageSetClass {
   ImageSetDefClass main_BG {
    Name "main_BG"
    Pos 0 0
-   Size 740 860
+   Size 1080 1325
    Flags 0
   }
  }
