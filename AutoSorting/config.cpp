@@ -1,7 +1,13 @@
 // Script File
 class CfgPatches {
 	class AutoSortMod {
-		requiredAddons[]= {"CF"};
+		units[]={};
+		weapons[]={};
+		requiredVersion=0.1;
+		requiredAddons[]= {
+			"CF",
+			"DZ_Data"
+		};
 	};
 };
 class CfgMods
@@ -62,5 +68,14 @@ class CfgMods
 				};
 			};
 		};
+	};
+};
+class CfgSlots
+{
+	class Slot_SortingHat
+	{
+		name="Sorting Hat";
+		displayName="Sorting Hat";
+		ghostIcon="missing";
 	};
 };

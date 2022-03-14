@@ -136,7 +136,7 @@ class ACSMMenu extends UIScriptedMenu
 				return true;
 			} else if (w == btnHelpMePls) {
 				Print( "Help Pls");
-				GetGame().OpenURL( "https://www.youtube.com/watch?v=o-YBDTqX_ZU" );
+				GetGame().OpenURL( "https:\\www.youtube.com/watch?v=o-YBDTqX_ZU" );
 				return true;
 				
 			} else if (w == btn_back) {
