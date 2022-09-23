@@ -20,14 +20,17 @@ class CfgMods
 		hideName=0;
 		hidePicture=0;
 		name="AutoSorting";
+		author="Dean Reid";
+		credits="Dean Reid";
 		authorID="76561198001768308";
+		version="0.1";
 		type="mod";
-		creditsJson = "AutoSorting/scripts/Data/Credits.json";
-		versionPath = "AutoSorting/scripts/Data/Version.hpp";
 		inputs="AutoSorting/scripts/inputsSortingHatmaster.xml";
 		dependencies[]=
 		{
-			"Game",	"World", "Mission"
+			"Game",
+			"World",
+			"Mission"
 		};
 		class defs
 		{

@@ -45,7 +45,7 @@ class ACSGlobals
 	
 	static ACSConfig Get() 
 	{
-		if (m_ACSConfig == NULL) {
+		if(m_ACSConfig == NULL) {
 			Set();
 		}
 		return m_ACSConfig;

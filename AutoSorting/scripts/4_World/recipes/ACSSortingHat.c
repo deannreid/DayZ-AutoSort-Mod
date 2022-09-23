@@ -2,17 +2,15 @@
  * DayZ - Storage Auto Sorter mod.
  * Developed by @Dean Reid
  *
- * Class: constants.c
+ * Class: ACSSortingHat.c
  *  
  * Class Information:
  *
- * Class handles gui constants
+ * Class handles Sorting Hat Item
  * 
  * Program Version: 1.0
  * Code Version: 1.0
  * 
  * Updates: 
- * 06/03/2022 - Initial Code Development
+ * 14/03/2022 - Initial Code Development
  */
-
-const int MENU_SORTINGUI_MENU = 24628583613;
