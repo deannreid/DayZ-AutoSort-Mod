@@ -31,19 +31,22 @@ modded class MissionGameplay {
 	override void OnInit()
     {
         super.OnInit();
+		
+		ASMKeybindManagement.RegisterBind("ASSortingUI", ACSBinder.Press, "ToggleSortingMenu", this);
+		ASMKeybindManagement.RegisterBind("ASAutoSort", ACSBinder.Press, "ToggleAutoSort", this);
 	    Print("[ACSUIManager] :: OnInit - Client"); 
 	}
 	
 	override void OnMissionStart()
     {
         super.OnMissionStart();
-        Print("[ACSUIManager] :: OnMissionStart - Client");
+        Print("[ACSUIManager-MissionGameplay] :: OnMissionStart - Client");
     }
 
     override void OnMissionFinish()
     {
         super.OnMissionFinish();
-        Print("[ACSUIManager] :: OnMissionFinish - Client");
+        Print("[ACSUIManager-MissionGameplay] :: OnMissionFinish - Client");
     }
 	
 	override void OnUpdate(float timeslice)

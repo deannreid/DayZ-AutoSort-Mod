@@ -23,17 +23,28 @@ modded class MissionServer {
         GetDayZGame().setACSGlobals(config);
     }
 	
+	override void OnMissionStart()
+    {
+        super.OnMissionStart();
+        Print("[ACS Manager - MissionServer] OnMissionStart - Server");
+	}
+	
+	override void OnMissionFinish()
+    {
+        super.OnMissionFinish();
+        Print("[ACS Manager - MissionServer] OnMissionFinish - Server");
+    }
+	
 	override void InvokeOnConnect(PlayerBase player, PlayerIdentity identity)
     {
-			Print("[ACSUIManager] :: Plugin InvokeOnConnect!");
+		Print("[ACSUIManager] :: Plugin InvokeOnConnect!");
         super.InvokeOnConnect(player, identity);
         auto configParams = new Param1<ACSConfig>(GetDayZGame().getACSGlobals());
        // GetGame().RPCSingleParam(player, ACSRPC.CHECKACSCONFIG, configParams, true, identity); Not Implemented Yet
     }
 	
 	override void OnInit() {
-		Print("[ACS Manager] :: Init - Server!");
 		super.OnInit();	
+		Print("[ACS Manager] :: Init - Server!");
 	}
-
 }
