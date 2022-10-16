@@ -24,26 +24,26 @@ modded class MissionGameplay {
 
 	
 	void MissionGameplay() {
-		Print("[ACSUIManager] :: Plugin Init!");
+		Print("[ACS - missionGameplay] :: Plugin Init!");
 		m_ACSMMenu = NULL;
 	}
 	
 	override void OnInit()
     {
         super.OnInit();
-	    Print("[ACSUIManager] :: OnInit - Client"); 
+	    Print("[ACS - missionGameplay] :: OnInit - Client"); 
 	}
 	
 	override void OnMissionStart()
     {
         super.OnMissionStart();
-        Print("[ACSUIManager] :: OnMissionStart - Client");
+        Print("[ACS - missionGameplay] :: OnMissionStart - Client");
     }
 
     override void OnMissionFinish()
     {
         super.OnMissionFinish();
-        Print("[ACSUIManager] :: OnMissionFinish - Client");
+        Print("[ACS - missionGameplay] :: OnMissionFinish - Client");
     }
 	
 	override void OnUpdate(float timeslice)
@@ -66,7 +66,7 @@ modded class MissionGameplay {
 	
 		// Open UI
 		if (GetGame().GetInput().LocalPress("ASSortingUI", true)){
-			Print("[ACSUIManager] :: Keybind Pressed !");
+			Print("[ACS - missionGameplay] :: Keybind Pressed !");
 			//clear_UI;
 			m_ACSMMenu = new ACSMMenu();
 			GetGame().GetUIManager().ShowScriptedMenu(m_ACSMMenu, NULL);
@@ -76,7 +76,7 @@ modded class MissionGameplay {
 	void clear_UI() {
 		if(m_ACSMMenu)
 		{
-			Print("[ACSUIManager] :: Keybind Pressed !");
+			Print("[ACS - missionGameplay] :: Keybind Pressed !");
 			GetGame().GetUIManager().HideScriptedMenu(m_ACSMMenu);
 			delete m_ACSMMenu;
 		}

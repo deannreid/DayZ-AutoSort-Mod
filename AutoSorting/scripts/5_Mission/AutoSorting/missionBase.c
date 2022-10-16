@@ -2,11 +2,11 @@
  * DayZ - Storage Auto Sorter mod.
  * Developed by @Dean Reid
  *
- * Class: acs_config.c
+ * Class: MissionBase.c
  *  
  * Class Information:
  *
- * Class handles configuration parameters
+ * Class handles base mission
  * 
  * Program Version: 1.0
  * Code Version: 1.0
@@ -15,7 +15,6 @@
  * 06/03/2022 - Initial Code Development
  */
 
-enum APCPrepConfig 
-{
-		checkACPConfig
+modded class MissionBase {
+	
 }

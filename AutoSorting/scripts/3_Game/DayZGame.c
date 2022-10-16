@@ -14,16 +14,19 @@
  * Updates: 
  * 10/03/2022 - Initial Code Development
  */
-modded class DayZGame { 
+
+modded class DayZGame {
+	
 	protected ref ACSConfig m_CheckACSConfig;
+	
+	void setACSGlobals(ACSConfig config)
+	{
+		m_CheckACSConfig = config;
+	}
+	
+	ACSConfig getACSGlobals()
+	{
+		return m_CheckACSConfig;
+	}
 
-    void setACSGlobals(ACSConfig config)
-    {
-        m_CheckACSConfig = config;
-    }
-
-    ACSConfig getACSGlobals()
-    {
-        return m_CheckACSConfig;
-    }
 }

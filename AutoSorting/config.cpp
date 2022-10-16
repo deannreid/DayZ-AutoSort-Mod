@@ -14,29 +14,28 @@ class CfgMods
 {
 	class AutoSortMod
 	{
-		dir="AutoSorting";
-		picture="AutoSorting/gui/images/logoOpaque.edds";
-		action="";
-		hideName=0;
-		hidePicture=0;
-		name="AutoSorting";
-		author="Dean Reid";
-		credits="Dean Reid";
-		authorID="76561198001768308";
-		version="0.1";
 		type="mod";
+		name="AutoSorting";
+		picture = "AutoSorting//assets/icons/iconOpaque.edds";
+		logo = "AutoSorting//assets/icons/iconOpaque.edds";
+		logoSmall = "AutoSorting//assets/icons/iconOpaque.edds";
+		logoOver = "AutoSorting//assets/icons/iconOpaque.edds";
+		action="https://github.com/deannreid/DayZ-AutoSort-Mod";
+		author="BigDeano";
+		authorID="76561198001768308";
+		version = "1.0.0";
+		overview = "A mod to sort your junk";
+		tooltip = "A mod to sort your junk";
 		inputs="AutoSorting/scripts/inputsSortingHatmaster.xml";
 		dependencies[]=
 		{
-			"Game",
-			"World",
-			"Mission"
+			"Game",	"World", "Mission"
 		};
 		class defs
 		{
 			class imageSets
             {
-                files[] = {"AutoSorting/gui/imagesets/main_UI.imageset"};
+                files[] = {"AutoSorting/assets/imagesets/main_UI.imageset"};
             };
 			class engineScriptModule
 			{
@@ -62,10 +61,7 @@ class CfgMods
 			class missionScriptModule
 			{
 				value="";
-				files[]=
-				{
-					"AutoSorting/scripts/5_Mission"
-				};
+				files[]={"AutoSorting/scripts/5_Mission"};
 			};
 		};
 	};

@@ -1,7 +1,7 @@
 FrameWidgetClass ACSUI {
  disabled 0
- position 724.16199 137.341
- size 662.57599 808.34399
+ position 496.478 113.374
+ size 662.57599 779.883
  hexactpos 1
  vexactpos 1
  hexactsize 1
@@ -21,7 +21,6 @@ FrameWidgetClass ACSUI {
    hexactsize 1
    vexactsize 1
    scaled 1
-   imageTexture ""
    mode blend
    "src alpha" 1
   }

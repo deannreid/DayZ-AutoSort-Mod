@@ -25,15 +25,14 @@ modded class MissionServer {
 	
 	override void InvokeOnConnect(PlayerBase player, PlayerIdentity identity)
     {
-			Print("[ACSUIManager] :: Plugin InvokeOnConnect!");
+		Print("[ACS - missionServer] :: Plugin InvokeOnConnect!");
         super.InvokeOnConnect(player, identity);
         auto configParams = new Param1<ACSConfig>(GetDayZGame().getACSGlobals());
        // GetGame().RPCSingleParam(player, ACSRPC.CHECKACSCONFIG, configParams, true, identity); Not Implemented Yet
     }
 	
 	override void OnInit() {
-		Print("[ACS Manager] :: Init - Server!");
+		Print("[ACS - missionServer] :: Init - Server!");
 		super.OnInit();	
 	}
-
 }
