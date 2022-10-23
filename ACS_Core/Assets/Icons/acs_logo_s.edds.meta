@@ -1,0 +1,16 @@
+MetaFileClass {
+ Name "{E4FA1780EE312315}@AutoSorting/Addons/GUI/Assets/icons/acs_logo_s.edds"
+ Author "desktop-qs5p323"
+ ChangeDate -1001902766
+ Configurations {
+  PAAResourceClass PC {
+   SourceFile "acs_logo_s.paa"
+  }
+  PAAResourceClass XBOX_ONE : PC {
+  }
+  PAAResourceClass PS4 : PC {
+  }
+  PAAResourceClass LINUX : PC {
+  }
+ }
+}
