@@ -15,9 +15,9 @@
  * 10/03/2022 - Initial Code Development
  */
 
-class ACSMainUI extends UIScriptedMenu
+class ACSInGameMain extends UIScriptedMenu
 {
-	protected Widget w_acsRootGUI;
+	protected Widget w_Root;
 	
     ImageWidget		img_background;
     ButtonWidget	btnSortAll;
@@ -33,13 +33,15 @@ class ACSMainUI extends UIScriptedMenu
     ButtonWidget	btnResources;
     ButtonWidget	btnSpare;
     ButtonWidget	btnMisc;	
-    ButtonWidget	btn_back;	
+    ButtonWidget	btnReturn;	
 	ButtonWidget    btnHelpMePls;
+	
+	void ACSInGameMain() {}
+	void ~ACSInGameMain() {}
 	
 	override Widget Init()
     {
-		layoutRoot		= GetGame().GetWorkspace().CreateWidgets( "AutoSort/gui/layouts/ACSMain.layout" );
-		//w_Root.Show( false );
+		layoutRoot		= GetGame().GetWorkspace().CreateWidgets( "ACS_Core/Assets/Layouts/UIPlayer/ACSInGameMain.layout" );
 
 		btnSortAll		= ButtonWidget.Cast( layoutRoot.FindAnyWidget( "btnSortAll" ) );
 		btnWeapons		= ButtonWidget.Cast( layoutRoot.FindAnyWidget( "btnWeapons" ) );
@@ -54,7 +56,7 @@ class ACSMainUI extends UIScriptedMenu
 		btnResources 	= ButtonWidget.Cast( layoutRoot.FindAnyWidget( "btnResources" ) );
 		btnSpare 		= ButtonWidget.Cast( layoutRoot.FindAnyWidget( "btnSpare" ) );
 		btnMisc 		= ButtonWidget.Cast( layoutRoot.FindAnyWidget( "btnMisc" ) );
-		btn_back 		= ButtonWidget.Cast( layoutRoot.FindAnyWidget( "btn_back" ) );
+		btnReturn 		= ButtonWidget.Cast( layoutRoot.FindAnyWidget( "btnReturn" ) );
 		btnHelpMePls    = ButtonWidget.Cast( layoutRoot.FindAnyWidget( "btnHelpMePls" ) );
 		img_background 	= ImageWidget.Cast( layoutRoot.FindAnyWidget( "imgBackground" ) );
 		//img_background.LoadImageFile( 0, "set:ACS_SortMenu image:BuildWheel" );
@@ -89,51 +91,56 @@ class ACSMainUI extends UIScriptedMenu
     {
 		super.OnClick(w, x, y, button);
 		
+		/*
+		* TODO: Logic
+		*/
 		if (button == MouseState.LEFT)
         {
 			if(w == btnSortAll) {	
-				
+				Print("[ACSUI] :: btnSortAll");
 			} else if (w == btnWeapons) {
-				
+				Print("[ACSUI] :: btnWeapons");
 				return true;
 			} else if (w == btnAmmo) {
-				
+				Print("[ACSUI] :: btnAmmo");
 				return true;
 			} else if (w == btnMags) {
-				
+				Print("[ACSUI] :: btnMags");
 				return true;
 			} else if (w == btnAttachments) {
-				
+				Print("[ACSUI] :: btnAttachments");
 				return true;
 			} else if (w == btnConsumables) {
-				
+				Print("[ACSUI] :: btnConsumables");
 				return true;
 			} else if (w == btnAttire) {
-				
+				Print("[ACSUI] :: btnAttire");
 				return true;
 			} else if (w == btnArmor) {
-				
+				Print("[ACSUI] :: btnArmor");
 				return true;
 			} else if (w == btnTools) {
-				
+				Print("[ACSUI] :: btnTools");
 				return true;
 			} else if (w == btnElectrical) {
-				
+				Print("[ACSUI] :: btnElectrical");
 				return true;
 			} else if (w == btnResources) {
-				
+				Print("[ACSUI] :: btnResources");
 				return true;
 			} else if (w == btnSpare) {
-				
+				Print("[ACSUI] :: btnSpare");
 				return true;
 			} else if (w == btnMisc) { 
-			
+			Print("[ACSUI] :: btnMisc");
 				return true;
 			} else if (w == btnHelpMePls) {
+				Print("[ACSUI] :: btnHelpMePls");
 				GetGame().OpenURL( "https://www.youtube.com/watch?v=o-YBDTqX_ZU" );
 				return true;
 				
-			} else if (w == btn_back) {
+			} else if (w == btnReturn) {
+				Print("[ACSUI] :: btnReturn");
 				GetGame().GetUIManager().HideScriptedMenu(this);
 				delete this;
 				return true;

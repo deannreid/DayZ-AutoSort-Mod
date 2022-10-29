@@ -24,6 +24,7 @@ ACSUIManager GetACSUIManager()
 
 class ACSScriptedMenu extends UIScriptedMenu
 {
+	
 	bool menuStatus; //True == showing
 	bool m_GameFocus;
 	bool m_toggleFocus;
@@ -77,6 +78,7 @@ class ACSScriptedMenu extends UIScriptedMenu
 
 	void OnInit()
 	{
+		Print("Client: [ACSScriptedMenu] :: Initializing ScriptedMenu Helper.");
 		//lock Control and show mouse cursor + set menu state to showing
 		if (GetGame().GetUIManager().GetMenu().ClassName().ToType() == GetType() && !IsShowing())
 		{

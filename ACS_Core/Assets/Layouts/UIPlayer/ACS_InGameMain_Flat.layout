@@ -1,7 +1,7 @@
-FrameWidgetClass ACSUI {
+FrameWidgetClass ACSUI_MINI {
  disabled 0
- position 286.87601 136.18301
- size 933.664 426.80298
+ position 12.973 12.973
+ size 940.14093 426.80298
  hexactpos 1
  vexactpos 1
  hexactsize 1
@@ -10,17 +10,18 @@ FrameWidgetClass ACSUI {
  draggable 0
  {
   ImageWidgetClass imgBackground {
-   visible 0
+   visible 1
    disabled 0
    clipchildren 0
    ignorepointer 1
-   position -66.2534 -26.5028
-   size 768.58899 861.34998
+   position 0.13333 1.02423
+   size 945.08301 427.40698
    hexactpos 1
    vexactpos 1
    hexactsize 1
    vexactsize 1
    scaled 1
+   imageTexture "{45971B02115DB0C5}@AutoSorting/Addons/ACS_Core/Assets/Imagesets/main_UI.edds"
    mode blend
    "src alpha" 1
   }

@@ -26,7 +26,7 @@ class ACSUIManager extends PluginBase
 	
 	override void OnInit()
 	{
-		Print("Client: ACSUIManager Plugin Init blud!");
+		Print("Client: [ACSKeybindHelper] :: Initializing ACSUIManager Helper.");
 	}
 	
 	void ~ACSUIManager()
@@ -55,6 +55,7 @@ class ACSUIManager extends PluginBase
 			if (Class.CastTo(ACSMenu,GetGame().GetUIManager().EnterScriptedMenu(menuID, menuParent))){
 				M_SCRIPTED_UI_INSTANCES.Insert( ACSMenu );
 				Print("[ACSUIManager] Menu "+ACSMenu.GetType() + " with ID: "+ menuID+ " was created");
+				//SendPlayerMessage(player, "[ACSUIManager] Menu "+ACSMenu.GetType() + " with ID: "+ menuID+ " was created");
 				ACSMenu.OnInit();
 				return true;
 			}
@@ -75,7 +76,7 @@ class ACSUIManager extends PluginBase
 	}
 	
 	/*
-	Note: this only removes instance from the M_SCRIPTED_UI_INSTANCES array
+	Note: this removes instance from the M_SCRIPTED_UI_INSTANCES array only 
 	*/
 	void DestroyMenuInstanceByType(typename menuType)
 	{
@@ -91,13 +92,13 @@ class ACSUIManager extends PluginBase
 	}
 	
 	
-	ACSMainUI CreateDialogBox(Widget parent, bool forceNull = false)
+	ACSInGameMain CreateDialogBox(Widget parent, bool forceNull = false)
 	{
 		Widget dialog;
-		ACSMainUI handler; 
+		ACSInGameMain handler; 
 		if (parent == null & forceNull)
 		{
-			dialog = GetGame().GetWorkspace().CreateWidgets("ACS_Core\Assets\Layouts\MainUI\ACSM_InGameMain.layout", null);
+			dialog = GetGame().GetWorkspace().CreateWidgets("ACS_Core\Assets\Layouts\UIPlayer\ACSInGameMain.layout", null);
 			dialog.GetScript(handler);
 			//handler.MakeSmall();
 			return handler;
@@ -106,9 +107,9 @@ class ACSUIManager extends PluginBase
 		if (parent != null)
 		{
 			if(parent.FindAnyWidget("Main") == null) {
-				dialog = GetGame().GetWorkspace().CreateWidgets("ACS_Core\Assets\Layouts\MainUI\ACSM_InGameMain.layout", parent.FindAnyWidget("PConfirmBox"));
+				dialog = GetGame().GetWorkspace().CreateWidgets("ACS_Core\Assets\Layouts\UIPlayer\ACSInGameMain.layout", parent.FindAnyWidget("acsUIMain"));
 			} else {
-				dialog = GetGame().GetWorkspace().CreateWidgets("ACS_Core\Assets\Layouts\MainUI\ACSM_InGameMain.layout", parent.FindAnyWidget("Main"));
+				dialog = GetGame().GetWorkspace().CreateWidgets("ACS_Core\Assets\Layouts\UIPlayer\ACSInGameMain.layout", parent.FindAnyWidget("Main"));
 			}
 			dialog.GetScript(handler);
 			if(handler != null) return handler;

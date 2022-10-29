@@ -1,0 +1,7 @@
+/*
+* Const file.
+*/
+
+const int MENU_ACS_MAIN_UI = 104292482338;
+const int MENU_ACS_MAIN_UI_SML = 104293485281;
+const int MENU_ACS_SETTINGS_UI = 104292482337;

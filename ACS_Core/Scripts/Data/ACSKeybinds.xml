@@ -2,9 +2,13 @@
 <modded_inputs>
     <inputs>
         <actions>
-            <input name="ASSortingUI" loc="Open Sorting UI" />
-            <input name="ASAutoSort" loc="Auto Quick Sort (Coming Soon)-" />
+            <input name="ASSortingUI" loc="STR_ACS_OPENMENU" />
+            <input name="ASAutoSort" loc="STR_ACS_QUICKSORT" />
         </actions>
+		<sorting name="acs" loc="STR_ACS_MENU">
+			<input name="ASSortingUI"/>
+			<input name="ASAutoSort"/>
+		</sorting>
     </inputs>
     <preset>
         <input name="ASSortingUI">

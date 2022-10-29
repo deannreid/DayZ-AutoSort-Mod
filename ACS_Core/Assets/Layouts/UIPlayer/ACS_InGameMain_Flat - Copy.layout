@@ -1,7 +1,7 @@
-FrameWidgetClass ACSUI {
+FrameWidgetClass ACSUI_MINI {
  disabled 0
- position 496.478 113.374
- size 662.57599 779.883
+ position 12.973 12.973
+ size 940.14093 426.80298
  hexactpos 1
  vexactpos 1
  hexactsize 1
@@ -10,25 +10,26 @@ FrameWidgetClass ACSUI {
  draggable 0
  {
   ImageWidgetClass imgBackground {
-   visible 0
+   visible 1
    disabled 0
    clipchildren 0
    ignorepointer 1
-   position -66.2534 -26.5028
-   size 768.58899 861.34998
+   position 0.13333 1.02423
+   size 945.08301 427.40698
    hexactpos 1
    vexactpos 1
    hexactsize 1
    vexactsize 1
    scaled 1
+   imageTexture "{45971B02115DB0C5}@AutoSorting/Addons/ACS_Core/Assets/Imagesets/main_UI.edds"
    mode blend
    "src alpha" 1
   }
   TextWidgetClass lblHeader {
    ignorepointer 1
    color 0.7098 0.0275 0.0275 1
-   position 26.5035 66.25771
-   size 594.83899 92.7858
+   position 158.36101 12.5948
+   size 635.41705 92.7858
    hexactpos 1
    vexactpos 1
    hexactsize 1
@@ -41,7 +42,7 @@ FrameWidgetClass ACSUI {
    "text valign" center
   }
   ButtonWidgetClass btnReturn {
-   position 13.251 13.2516
+   position 12.5948 12.5948
    size 54.5655 26.5031
    hexactpos 1
    vexactpos 1
@@ -51,7 +52,7 @@ FrameWidgetClass ACSUI {
    font "gui/fonts/metronblack"
   }
   ButtonWidgetClass btnHelp {
-   position 622.82202 13.2516
+   position 891.43005 25.8463
    size 24.9907 26.5031
    hexactpos 1
    vexactpos 1
@@ -62,8 +63,8 @@ FrameWidgetClass ACSUI {
   }
   ButtonWidgetClass btnSortAll {
    disabled 1
-   position 13.2519 702.33099
-   size 622.82202 61.5928
+   position 11.3372 360.03201
+   size 916.38202 61.5928
    hexactpos 1
    vexactpos 1
    hexactsize 1
@@ -74,7 +75,7 @@ FrameWidgetClass ACSUI {
    "disabled text color" 0.4902 0.4902 0.4902 1
   }
   ButtonWidgetClass btnWeapons {
-   position 13.2509 238.528
+   position 9.44611 137.77
    size 291.53299 60.0999
    hexactpos 1
    vexactpos 1
@@ -84,8 +85,8 @@ FrameWidgetClass ACSUI {
    font "gui/fonts/metronblack"
   }
   ButtonWidgetClass btnAmmo {
-   position 344.539 238.528
-   size 295.45697 60.0999
+   position 312.535 137.703
+   size 157.715 59.9427
    hexactpos 1
    vexactpos 1
    hexactsize 1
@@ -94,8 +95,8 @@ FrameWidgetClass ACSUI {
    font "gui/fonts/metronblack"
   }
   ButtonWidgetClass btnAttachments {
-   position 344.54001 304.785
-   size 295.45697 56.9276
+   position 636.54596 138.88901
+   size 291.65298 59.7573
    hexactpos 1
    vexactpos 1
    hexactsize 1
@@ -104,18 +105,18 @@ FrameWidgetClass ACSUI {
    font "gui/fonts/metronblack"
   }
   ButtonWidgetClass btnMags {
-   position 13.2519 304.785
-   size 291.53299 56.9276
+   position 482.289 138.44199
+   size 141.347 59.4512
    hexactpos 1
    vexactpos 1
    hexactsize 1
    vexactsize 1
-   text "Magazines"
+   text "Mags"
    font "gui/fonts/metronblack"
   }
   ButtonWidgetClass btnConsumables {
-   position 13.2509 424.04901
-   size 291.53299 60.4738
+   position 10.0309 218.35901
+   size 291.53299 48.0559
    hexactpos 1
    vexactpos 1
    hexactsize 1
@@ -124,8 +125,8 @@ FrameWidgetClass ACSUI {
    font "gui/fonts/metronblack"
   }
   ButtonWidgetClass btnAttire {
-   position 344.539 424.04901
-   size 136.43799 60.4738
+   position 636.54596 285.49698
+   size 136.43799 52.2991
    hexactpos 1
    vexactpos 1
    hexactsize 1
@@ -134,8 +135,8 @@ FrameWidgetClass ACSUI {
    font "gui/fonts/metronblack"
   }
   ButtonWidgetClass btnArmor {
-   position 503.55798 424.04901
-   size 131.77501 60.4738
+   position 792.979 285.70502
+   size 135.332 51.3559
    hexactpos 1
    vexactpos 1
    hexactsize 1
@@ -144,8 +145,8 @@ FrameWidgetClass ACSUI {
    font "gui/fonts/metronblack"
   }
   ButtonWidgetClass btnElectrical {
-   position 344.539 490.30698
-   size 295.45697 57.3014
+   position 11.4421 285.47998
+   size 295.45697 52.171
    hexactpos 1
    vexactpos 1
    hexactsize 1
@@ -154,8 +155,8 @@ FrameWidgetClass ACSUI {
    font "gui/fonts/metronblack"
   }
   ButtonWidgetClass btnTools {
-   position 13.2509 490.30698
-   size 291.53299 57.3014
+   position 317.14902 217.63
+   size 304.13 49.4837
    hexactpos 1
    vexactpos 1
    hexactsize 1
@@ -164,8 +165,8 @@ FrameWidgetClass ACSUI {
    font "gui/fonts/metronblack"
   }
   ButtonWidgetClass btnResources {
-   position 13.2509 556.565
-   size 291.53299 55.8083
+   position 636.703 217.799
+   size 291.53299 48.8716
    hexactpos 1
    vexactpos 1
    hexactsize 1
@@ -173,21 +174,9 @@ FrameWidgetClass ACSUI {
    text "Resources"
    font "gui/fonts/metronblack"
   }
-  ButtonWidgetClass btnSpare {
-   disabled 1
-   position 344.539 556.565
-   size 295.45697 55.8083
-   hexactpos 1
-   vexactpos 1
-   hexactsize 1
-   vexactsize 1
-   text "Spare"
-   font "gui/fonts/metronblack"
-   "disabled text color" 0.5098 0.5098 0.5098 1
-  }
   ButtonWidgetClass btnMisc {
-   position 198.77301 622.82202
-   size 291.535 59.0222
+   position 316.30698 286.17203
+   size 306.75699 52.1707
    hexactpos 1
    vexactpos 1
    hexactsize 1

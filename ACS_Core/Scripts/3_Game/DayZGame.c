@@ -19,12 +19,6 @@ modded class DayZGame {
 	
 	protected ref ACSConfig m_CheckACSConfig;
 	
-	
-	void DayZGame()
-	{
-		Print("[ACS - missionBase] :: Loading Mod!");
-	}
-	
 	void setACSGlobals(ACSConfig config)
 	{
 		m_CheckACSConfig = config;
@@ -34,5 +28,4 @@ modded class DayZGame {
 	{
 		return m_CheckACSConfig;
 	}
-
 }

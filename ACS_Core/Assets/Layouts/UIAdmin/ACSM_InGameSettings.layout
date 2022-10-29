@@ -1,0 +1,125 @@
+FrameWidgetClass ACSUI_SET {
+ disabled 0
+ position 12.9729 12.973
+ size 465.22501 453.44998
+ hexactpos 1
+ vexactpos 1
+ hexactsize 1
+ vexactsize 1
+ {
+  ImageWidgetClass imgBackground {
+   visible 1
+   disabled 0
+   clipchildren 0
+   ignorepointer 1
+   position -3.1053 -0.59515
+   size 470.65799 453.314
+   hexactpos 1
+   vexactpos 1
+   hexactsize 1
+   vexactsize 1
+   scaled 1
+   imageTexture "{45971B02115DB0C5}@AutoSorting/Addons/ACS_Core/Assets/Imagesets/main_UI.edds"
+   mode blend
+   "src alpha" 1
+  }
+  TextWidgetClass lblHeader {
+   ignorepointer 1
+   color 0.7098 0.0275 0.0275 1
+   position 12.973 12.973
+   size 440.931 60.3417
+   hexactpos 1
+   vexactpos 1
+   hexactsize 1
+   vexactsize 1
+   fixaspect fixwidth
+   style Bold
+   text "Auto Sort 5000"
+   font "gui/fonts/metron-bold28"
+   "text halign" center
+   "text valign" center
+  }
+  TextWidgetClass lblHeaderSettings {
+   ignorepointer 1
+   color 0.7098 0.0275 0.0275 1
+   position 12.5948 73.1636
+   size 440.035 32.6277
+   hexactpos 1
+   vexactpos 1
+   hexactsize 1
+   vexactsize 1
+   fixaspect fixwidth
+   style Bold
+   text "Settings"
+   font "gui/fonts/metron-bold16"
+   "text halign" center
+   "text valign" center
+  }
+  TextWidgetClass lblDarkMode {
+   ignorepointer 1
+   position 12.5948 132.55501
+   size 214.65001 48
+   hexactpos 1
+   vexactpos 1
+   hexactsize 1
+   vexactsize 1
+   text "STR_TXT_DARKMODE"
+  }
+  TextWidgetClass lblDebug {
+   ignorepointer 1
+   position 12.5948 253.745
+   size 254.07301 48
+   hexactpos 1
+   vexactpos 1
+   hexactsize 1
+   vexactsize 1
+   text "STR_TXT_ADMINDBG"
+  }
+  TextWidgetClass lblFlatUI {
+   ignorepointer 1
+   position 12.5947 193.15001
+   size 127.037 48
+   hexactpos 1
+   vexactpos 1
+   hexactsize 1
+   vexactsize 1
+   text "STR_TXT_FLATUI"
+  }
+  CheckBoxWidgetClass cbxDarkMode {
+   disabled 1
+   position 295.13501 132.55501
+   size 48 48
+   hexactpos 1
+   vexactpos 1
+   hexactsize 1
+   vexactsize 1
+  }
+  CheckBoxWidgetClass cbxAdminDebug {
+   disabled 0
+   position 295.13501 253.745
+   size 48 48
+   hexactpos 1
+   vexactpos 1
+   hexactsize 1
+   vexactsize 1
+  }
+  CheckBoxWidgetClass cbxFlatUI {
+   disabled 0
+   position 295.13501 193.15001
+   size 48 48
+   hexactpos 1
+   vexactpos 1
+   hexactsize 1
+   vexactsize 1
+  }
+  ButtonWidgetClass btnReturn {
+   position 100.38801 353.604
+   size 231.342 48
+   hexactpos 1
+   vexactpos 1
+   hexactsize 1
+   vexactsize 1
+   text "STR_BTN_RETURN"
+  }
+ }
+}

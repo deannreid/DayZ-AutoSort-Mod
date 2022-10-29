@@ -1,0 +1,29 @@
+﻿Language,original,english,german
+STR_AUTOSORTMOD_NAME,AutoSorting ,AutoSorting ,AutoSorting
+STR_ACS_MENU,ACS,ACS,ACS
+STR_ACS_OPENMENU,Open Sorting Menu,Open Sorting Menu,Sortiermenü öffnen
+STR_ACS_QUICKSORT,Auto Quick Sort (Coming Soon),Auto Quick Sort (Coming Soon),
+STR_BTN_DEPOSIT,Deposit,Deposit,Anzahlung
+STR_BTN_DEPOSITALL,Depost All,Depost All,Alle hinterlegen
+STR_BTN_ATTACHMENTS,Attachments,Attachments,Attachments
+STR_BTN_AMMO,Ammo,Ammo,Anhänge
+STR_BTN_WEAPONS,Weapons,Weapons,Weapons
+STR_BTN_MAGS,Magazines,Magazines,Zeitschriften
+STR_BTN_MEDICAL,Medical,Medical,Medizinisch
+STR_BTN_MELEE,Melee,Melee,Nahkampf
+STR_BTN_CONSUMABLES,Consumables,Consumables,Verbrauchsmaterial
+STR_BTN_ATTIRE,Attire,Attire,Kleider
+STR_BTN_ARMOR,Armor,Armor,Rüstung
+STR_BTN_CONSTRUCTION,Construction,Construction,Konstruktion
+STR_BTN_ELECTRICAL,Electrical,Electrical,Elektrisch
+STR_BTN_TOOLS,Tools,Tools,Werkzeuge
+STR_BTN_VEHICLEPARTS,Vehicle Parts,Vehicle Parts,Fahrzeugteile
+STR_BTN_RESOURCES,Resources,Resources,Betriebsmittel
+STR_BTN_MISC,Misc,Misc,Verschiedenes
+STR_BTN_SORTALL,Sort All,Sort All,Alle sortieren
+STR_BTN_RETURN,<< Return,<< Return,<< Rückkehr
+STR_TXT_DARKMODE,Dark Mode,Dark Mode,Dunkler Modus
+STR_TXT_FLATUI,Flat UI,Flat UI,Flach UI
+STR_TXT_ADMINDBG,Admin Debug,Admin Debug,Admin-Debuggen
+STR_TXT_HEADERTEXT,Auto Sort 5000,Auto Sort 5000,Auto Sort 5000
+STR_ITM_SORTINGHAT,Sorting Hat,Sorting Hat,Sortierhut

@@ -2,7 +2,7 @@
  * DayZ - Storage Auto Sorter mod.
  * Developed by @Dean Reid
  *
- * Class: HelperManager.c
+ * Class: PluginManager.c
  *  
  * Class Information:
  *
@@ -20,7 +20,7 @@ modded class PluginManager
 
 	void PluginManager()
 	{
-		Print ("[ACSPluginManager] Loading Helper Classes");
+		Print ("[ACSPluginManager] Loading Plugin Classes");
 	}
 
 	override void Init()
