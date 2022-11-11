@@ -4,10 +4,12 @@
         <actions>
             <input name="ASSortingUI" loc="STR_ACS_OPENMENU" />
             <input name="ASAutoSort" loc="STR_ACS_QUICKSORT" />
+			<input name="ASSettings" loc="STR_ACS_SETTINGS" />
         </actions>
 		<sorting name="acs" loc="STR_ACS_MENU">
 			<input name="ASSortingUI"/>
 			<input name="ASAutoSort"/>
+			<input name="ASSettings"/>
 		</sorting>
     </inputs>
     <preset>
@@ -16,6 +18,9 @@
         </input>
         <input name="ASAutoSort">
             <btn name="kINSERT" />
+        </input>
+        <input name="ASSettings">
+            <btn name="kF12" />
         </input>
     </preset>
 </modded_inputs>
